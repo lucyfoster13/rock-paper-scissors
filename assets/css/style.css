@@ -124,14 +124,14 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 20px 5px;
+    padding: 10px 5px;
     width: 100%;
     height: auto;
   }
 
   .choice-area button {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     margin: 5px 5px;
     box-shadow:  0 5px 5px 0 rgba(0, 0, 0, .6);
@@ -157,4 +157,50 @@ header {
   .timer-area h2 {
     padding-top: .5rem;
     font-size: medium;
+  }
+
+  /*Result Area*/
+  .result-area {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 5px;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+  }
+
+  #user-image {
+    display: flex;
+    float: left;
+    width: 45%;
+  }
+
+  #computer-image {
+    display: flex;
+    float: right;
+    width: 45%;
+  }
+
+  .score-area {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+  }
+
+  #user-score-text {
+    float: left;
+    width: 45%;
+  }
+
+  #computer-score-text {
+    float: right;
+    width: 45%;
+  }
+
+
+
+  .score-area h3 {
+    font-size: .75rem;
   }
