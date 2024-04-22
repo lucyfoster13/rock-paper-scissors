@@ -135,11 +135,30 @@ header {
     border-radius: 50%;
     margin: 5px 5px;
     box-shadow:  0 5px 5px 0 rgba(0, 0, 0, .6);
+    border: 5px solid purple;
 }
 
-  .btn-rock {
-    background: url(..images/rock.webp) no-repeat center center/cover;
-  }
+#rock-image {
+  display: flex;
+  width: 4rem;
+  border-radius: 50%;
+  align-content: center;
+}
+
+#paper-image {
+  display: flex;
+  width: 4rem;
+  border-radius: 50%;
+  align-content: center;
+}
+
+#scissors-image {
+  display: flex;
+  width: 4rem;
+  border-radius: 50%;
+  align-content: center;
+}
+
 
   .btn-paper {
     background: url(..images/paper.webp) no-repeat center center/cover;
@@ -154,11 +173,19 @@ header {
     font-size: medium;
   }
 
-  .timer-area h2 {
-    padding-top: .5rem;
-    font-size: medium;
+  /*Timer Area*/
+
+  #timer-area {
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
   }
 
+  #timer {
+    display: inline-flex;
+    justify-content: center;
+    font-size: medium;
+  }
   /*Result Area*/
   .result-area {
     display: flex;

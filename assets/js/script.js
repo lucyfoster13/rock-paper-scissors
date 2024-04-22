@@ -1,3 +1,5 @@
+
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -22,4 +24,20 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+
+/*Timer*/
+
+const startingSeconds = 30;
+let time = startingSeconds;
+
+const timer = document.getElementById("timer");
+
+setInterval(updateCountdown, 1000);
+
+function updateCountdown() {
+  const seconds = Math.floor(time);
+
+  timer.innerHTML = `00:${seconds}`;
+  time--;
 }
