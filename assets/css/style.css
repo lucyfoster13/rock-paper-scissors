@@ -185,6 +185,14 @@ header {
     justify-content: center;
   }
 
+  #result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
+
   #timer {
     font-size: large;
   }
