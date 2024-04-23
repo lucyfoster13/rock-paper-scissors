@@ -71,6 +71,8 @@ function updateCountdown() {
   }
   }
 
+
+
 rockButton.addEventListener('click', () => playRound('rock'));
 
 paperButton.addEventListener('click', () => playRound('paper'));
@@ -120,7 +122,7 @@ if (playerChoice === computerChoice) {
 
     resultDisplay.textContent = 'You win!';
 
-    userScore++;
+    playerScore++;
 
 } else {
 
@@ -129,30 +131,25 @@ if (playerChoice === computerChoice) {
     computerScore++;
 
 }
+/* Update the scoreboard after each round */
+playerScoreDisplay.textContent = `Your Score: ${playerScore}`;
+computerScoreDisplay.textContent = `Gary's Score: ${computerScore}`;
 }
-
-playerScoreDisplay.textContent = `Player Score: ${playerScore}`;
-
-computerScoreDisplay.textContent = `Computer Score: ${computerScore}`;
-
-
-
 
   function concludeGame() {
 
-    const gameContainer = document.getElementById('game-area');
-
-    const choices = document.getElementById('choice-area');
-
-    const roundRes = document.getElementById('result');
     let timer = document.getElementById("timer-area");
     timer.style.display = "none";
-
-    if (choices) {
-
-        choices.style.display = 'none';
-
+    let finalResult = '';
+  
+    if (playerScore > computerScore) {
+        finalResult = 'Congratulations, you won the game!';
+    } else if (playerScore < computerScore) {
+        finalResult = 'Game over, Gary wins!';
+    } else {
+        finalResult = 'The game ends in a draw!';
     }
+    resultDisplay.textContent = finalResult;
   }
 
 function disableBtns() {
@@ -166,7 +163,6 @@ function enableBtns() {
 const gameConclusion = document.createElement('div');
 
 gameConclusion.setAttribute('id', 'game-conclusion');
-
 
 
 let finalMessage = '';
@@ -185,24 +181,7 @@ if (playerScore > computerScore) {
 
 }
 
-
-
 gameConclusion.innerHTML = `
-
-    <h2>Game Over</h2>
-
-    <p>${finalMessage}</p>
-
-    <p>Final Score - You: ${playerScore} | Computer: ${computerScore}</p>
-
-    <button id="restart-btn">Restart Game</button>
-
-`;
-
-
-
-gameContainer.appendChild(gameConclusion);
-
-document.getElementById('restart-btn').addEventListener('click', restartGame);
-
-
+<h2>Game Over</h2>
+<p>${finalMessage}</p>
+<p>Final Score - You: ${playerScore} | Gary: ${computerScore}</p>`
