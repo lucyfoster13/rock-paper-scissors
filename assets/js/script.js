@@ -31,9 +31,9 @@ window.onclick = function (event) {
 const userImage = document.getElementById("user-image");
 const computerImage = document.getElementById("computer-image");
 const resultDisplay = document.getElementById('result');
-const rockButton = document.getElementById('btn-rock');
-const paperButton = document.getElementById('btn-paper');
-const scissorsButton = document.getElementById('btn-scissors');
+const rockButton = document.getElementById('rock-image');
+const paperButton = document.getElementById('paper-image');
+const scissorsButton = document.getElementById('scissors-image');
 
 
 //Disable game buttons and hide timer when page loads
@@ -88,6 +88,22 @@ const choices = ['rock', 'paper', 'scissors'];
 
 const computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
+if (playerChoice === 'rock') {
+  document.getElementById("user-image").src = "assets/images/rock.webp";
+} else if (playerChoice === 'paper') {
+  document.getElementById("user-image").src = "assets/images/paper.webp";
+} else if (playerChoice === 'scissors') {
+  document.getElementById("user-image").src = "assets/images/scissors.webp";
+}
+
+if (computerChoice === 'rock') {
+  document.getElementById("computer-image").src = "assets/images/rock.webp";
+} else if (playerChoice === 'paper') {
+  document.getElementById("computer-image").src = "assets/images/paper.webp";
+} else if (playerChoice === 'scissors') {
+  document.getElementById("computer-image").src = "assets/images/scissors.webp";
+}
+
 if (playerChoice === computerChoice) {
 
     resultDisplay.textContent = 'It\'s a draw!';
@@ -104,11 +120,11 @@ if (playerChoice === computerChoice) {
 
     resultDisplay.textContent = 'You win!';
 
-    playerScore++;
+    userScore++;
 
 } else {
 
-    resultDisplay.textContent = 'Computer wins!';
+    resultDisplay.textContent = 'Gary wins!';
 
     computerScore++;
 
@@ -123,9 +139,9 @@ computerScoreDisplay.textContent = `Computer Score: ${computerScore}`;
 
 
   function concludeGame() {
-    const gameContainer = document.getElementById('rps-game');
+    const gameContainer = document.getElementById('game-area');
 
-    const choices = document.getElementById('choices');
+    const choices = document.getElementById('choice-area');
 
     const roundRes = document.getElementById('result');
 
