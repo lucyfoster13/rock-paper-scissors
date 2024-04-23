@@ -40,4 +40,30 @@ function updateCountdown() {
 
   timer.innerHTML = `00:${seconds}`;
   time--;
+  if (seconds === 0) {
+    stop();
 }
+}
+
+/**
+ * Get the constant for all DOM elements and game choice buttons
+ */
+
+const buttons = document.getElementsByClassName("btn");
+const userImage = document.getElementById("user-image");
+const computererImage = document.getElementById("computer-image");
+const userScore = document.getElementById("user-score");
+const computerScore = document.getElementById("computer-score");
+const choices = ["rock", "paper", "scissors"];
+
+/**Functions to operate the game and check the winner */
+
+function runGame();
+
+function checkAnswers();
+
+function incrementUserScore();
+
+function incrementComputerScore();
+
+
