@@ -250,7 +250,7 @@ header {
     width: 45%;
   }
 
-  .score-area {
+  #score-area {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -270,6 +270,6 @@ header {
 
 
 
-  .score-area h3 {
+  #score-area h3 {
     font-size: .75rem;
   }

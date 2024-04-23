@@ -139,11 +139,14 @@ computerScoreDisplay.textContent = `Computer Score: ${computerScore}`;
 
 
   function concludeGame() {
+
     const gameContainer = document.getElementById('game-area');
 
     const choices = document.getElementById('choice-area');
 
     const roundRes = document.getElementById('result');
+    let timer = document.getElementById("timer-area");
+    timer.style.display = "none";
 
     if (choices) {
 
