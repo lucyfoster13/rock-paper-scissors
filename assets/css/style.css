@@ -191,6 +191,7 @@ header {
     font-weight: bold;
     display: flex;
     justify-content: center;
+    z-index: 2;
   }
 
   #timer {
