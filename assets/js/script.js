@@ -58,12 +58,20 @@ const choices = ["rock", "paper", "scissors"];
 
 /**Functions to operate the game and check the winner */
 
-function runGame();
+function runGame() {
 
-function checkAnswers();
+}
 
-function incrementUserScore();
+function checkAnswers() {
 
-function incrementComputerScore();
+}
+
+function incrementUserScore() {
+
+}
+
+function incrementComputerScore() {
+  
+}
 
 
