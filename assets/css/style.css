@@ -186,6 +186,23 @@ header {
     justify-content: center;
     font-size: medium;
   }
+
+  /*Start game button*/
+
+  #start-btn-area {
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+  }
+
+  #start-btn {
+    display: inline-flex;
+    justify-content: center;
+    font-size: medium;
+    align-content: center;
+
+  }
+
   /*Result Area*/
   .result-area {
     display: flex;
