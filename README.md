@@ -62,11 +62,11 @@ Testing was focused to ensure the following criteria were met:
 - HTML page lang attribute has been set
 - Aria properties have been implemented correctly
 
-Found Issue:
-Fix:
+Found Issue: There was an empty h2 tag surrounding my result message div.
+Fix: I removed the tags prepared to have to update the CSS styling for the messages but actually preferred the way it looked, using my secondary Goggle Font: Oswald.
 
 ### Lighthouse Testing
-![Lighthouse Result]()
+![Lighthouse Result](docs/testing-images/lighthouse-test.jpg)
 
 
 ### Functional Testing

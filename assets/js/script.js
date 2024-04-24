@@ -27,8 +27,6 @@ window.onclick = function (event) {
  * Get the constant for all DOM elements and game choice buttons
  */
 
-const userImage = document.getElementById("user-image");
-const computerImage = document.getElementById("computer-image");
 const resultDisplay = document.getElementById('result');
 const rockButton = document.getElementById('rock-image');
 const paperButton = document.getElementById('paper-image');
@@ -75,6 +73,7 @@ rockButton.addEventListener('click', () => playRound('rock'));
 paperButton.addEventListener('click', () => playRound('paper'));
 
 scissorsButton.addEventListener('click', () => playRound('scissors'));
+
 
 let playerScore = 0;
 let computerScore = 0;
