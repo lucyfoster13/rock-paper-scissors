@@ -49,24 +49,8 @@ startBtn.onclick = function runGame() {
   startBtn.style.display = 'none';
 };
 
-/*Timer*/
-// const startingSeconds = 30;
-// let time = startingSeconds;
 
-// const timer = document.getElementById('timer');
-
-// setInterval(updateCountdown, 1000);
-
-// function updateCountdown() {
-//   const seconds = Math.floor(time);
-
-//   timer.innerHTML = `00:${seconds}`;
-//   time--;
-//   if (seconds === -1) {
-//     concludeGame();
-//   }
-// }
-
+//Timer
 function startTimer() {
   //Part borrowed from https://www.shecodes.io/athena/52336-how-to-create-a-countdown-timer-in-javascript
 
@@ -75,6 +59,7 @@ function startTimer() {
     count--;
 
     if (count === -1) {
+      clearInterval(timer);
       concludeGame();
     }
   }, 1000);
@@ -95,34 +80,26 @@ function playRound(playerChoice) {
   const choices = ['rock', 'paper', 'scissors'];
 
   let computerChoice = choices[Math.floor(Math.random() * choices.length)];
-  console.log("-----------");
-  console.log(computerChoice);
-  console.log("-----------");
 
 
   if (playerChoice === 'rock') {
-    console.log("player rock");
+
     document.getElementById('user-image').src = 'assets/images/rock.webp';
   } else if (playerChoice === 'paper') {
-    console.log("player paper");
-
+  
     document.getElementById('user-image').src = 'assets/images/paper.webp';
   } else if (playerChoice === 'scissors') {
-    console.log("player scissors");
 
     document.getElementById('user-image').src = 'assets/images/scissors.webp';
   }
 
   if (computerChoice === 'rock') {
-    console.log("comp rock");
 
     document.getElementById('computer-image').src = 'assets/images/rock.webp';
   } else if (computerChoice === 'paper') {
-    console.log("comp paper");
 
     document.getElementById('computer-image').src = 'assets/images/paper.webp';
   } else if (computerChoice === 'scissors') {
-    console.log("comp scissors");
 
     document.getElementById('computer-image').src =
       'assets/images/scissors.webp';
@@ -165,18 +142,6 @@ function concludeGame() {
 }
 
 function disableBtns() {
-  //   let buttonList = document.getElementsByClassName('btn');
-  //   let rock = document.getElementById("btn-rock").disabled = true;
-  //   console.log(rock.innerHTML);
-
-  //   for (let index = 0; index < buttonList.length; index++) {
-  //     buttonList[index].disabled = true;
-  //     console.log(buttonList.innerHTML);
-  //   }
-
-  //   const rockButton = document.getElementById('rock-image');
-  // const paperButton = document.getElementById('paper-image');
-  // const scissorsButton = document.getElementById('scissors-image');
   rockButton.disabled = true;
   paperButton.disabled = true;
   scissorsButton.disabled = true;
@@ -202,7 +167,14 @@ if (playerScore > computerScore) {
   finalMessage = 'The game ends in a draw!';
 }
 
-gameConclusion.innerHTML = `
-<h2>Game Over</h2>
-<p>${finalMessage}</p>
-<p>Final Score - You: ${playerScore} | Gary: ${computerScore}</p>`;
+
+let resetBtn = document.getElementById("reset-btn");
+resetBtn.onclick = function resetGame() {
+  disableBtns();
+  let timer = document.getElementById('timer-area');
+  timer.style.display = 'none';
+  startBtn.style.display = 'block';
+  resultDisplay.style.display = 'none';
+  document.getElementById('timer');
+  clearInterval(timer);
+}
