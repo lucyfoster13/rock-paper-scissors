@@ -54,7 +54,7 @@ startBtn.onclick = function runGame() {
 function startTimer() {
   //Part borrowed from https://www.shecodes.io/athena/52336-how-to-create-a-countdown-timer-in-javascript
 
-  timer = setInterval(function () {
+ let timer = setInterval(function () {
     // clearInterval(timer);
     document.getElementById('timer').innerHTML = `${count}`;
     count--;
@@ -177,5 +177,5 @@ resetBtn.onclick = function resetGame() {
   resultDisplay.style.display = 'none';
   document.getElementById('timer');
   clearInterval(timer);
-  count = 30
-}
+  count = 30;
+};
