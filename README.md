@@ -1,4 +1,4 @@
-# Camera Club
+# Rock, Paper, Scissors
 
 Rock, Paper, Scissors is an entertainment website. Users can play the traditional game against the CPU (our robot, Gary). Whoever wins the most rounds before the 30-second timer runs out is the winner. The live version of the site can be viewed [here:](https://lucyfoster13.github.io/rock-paper-scissors/)
 
@@ -86,8 +86,13 @@ In all scenarios, the functions behaved as expected.
 * CSS
     * No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org)
 
-![CSS Validator Results](****)
+![CSS Validator Results](docs/testing-images/css-validator.jpg)
 
+
+* JS
+    * No errors were found when passing through the official [JS Hint](https://jshint.com/)
+
+![JS Hint Validator Results](*****)
 
 ## Technologies
 * HTML
@@ -157,7 +162,7 @@ The project will have been cloned on your local machine and be ready to use.
 ### Code
 * Code to disable the game buttons when the page first loads: https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp
 * When I ran into obstacles, this website helped me to fix them and to further understand the logic and function behind the code: https://hackr.io/blog/how-to-build-rock-paper-scissors-in-javascript
-* I learned how to create a countdown timer with help from this video: https://www.youtube.com/watch?v=x7WJEmxNlEs
+* I learned how to create a countdown timer with help from this site: https://www.shecodes.io/athena/52336-how-to-create-a-countdown-timer-in-javascript
 * I learned how to add a modal box from this lesson: https://www.w3schools.com/howto/howto_css_modals.asp
 
 ### Media 
