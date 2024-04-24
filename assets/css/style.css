@@ -3,139 +3,152 @@
 
 /*Asterisk wildcard selector to overwrite default style settings*/
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /*General Styles*/
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    color: #252525;
-    font-family: "Oswald", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #252525;
+  font-family: "Oswald", sans-serif;
 }
 
-h1, h2, h3 {
-    font-family: "Roboto Slab", serif;
-    font-size: 250%;
-    font-weight: 500;
-    font-style: normal;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 2px;
+h1,
+h2,
+h3 {
+  font-family: "Roboto Slab", serif;
+  font-size: 250%;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
 }
 
 /* Header */
 header {
-    background: lightblue;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+  background: lightblue;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 
 /*How To Play Button*/
 #myBtn {
-    padding: 10px 10px;
-    border: 1px solid #252525;
-    border-radius: 5px;
-    box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, .8);
-    width: 150px;
-    margin: 10px auto 0;
-    font-weight: bold;
-    font-size: 1.25rem;
-    color:  rgb(123, 3, 35);
+  padding: 10px 10px;
+  border: 1px solid #252525;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, .8);
+  width: 150px;
+  margin: 10px auto 0;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: rgb(123, 3, 35);
 }
 
 #myBtn:hover {
-        color: #fefefe;
-        background-color: rgba(189, 82, 111);
+  color: #fefefe;
+  background-color: rgba(189, 82, 111);
 
 }
+
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-
-  /* Modal Header*/
-.modal-header {
-    padding: 10px 16px;
-    font-size: .8rem;
-  
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    text-align: center;
-  }
 
-  .modal-body {
-    padding: 15px 15px;
-    background-color: rgba(250, 250, 250, 0.8);
-    
+/* Modal Header*/
+.modal-header {
+  padding: 10px 16px;
+  font-size: .8rem;
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+  text-align: center;
+}
+
+.modal-body {
+  padding: 15px 15px;
+  background-color: rgba(250, 250, 250, 0.8);
+
 }
 
 /* Modal (content box) - (Walkthrough code) */
 .modal-content {
-  background-color:rgba(189, 82, 111, .8);
-    margin: 15% auto;
-    padding: 0 20px 20px;
-    border: 1px solid #252525;
-    border-radius: 10px;
-    width: 80%;
-    text-align: center;
-    line-height: 30px;
+  background-color: rgba(189, 82, 111, .8);
+  margin: 15% auto;
+  padding: 0 20px 20px;
+  border: 1px solid #252525;
+  border-radius: 10px;
+  width: 80%;
+  text-align: center;
+  line-height: 30px;
 }
-  
-  /* The Close Button */
-  .close {
-    color: #252525;
-    float: right;
-    font-size: 35px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: red;
-    text-decoration: none;
-    cursor: pointer;
-  }
 
-  /*Game area*/
+/* The Close Button */
+.close {
+  color: #252525;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+}
 
-  .choice-area {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px 5px;
-    width: 100%;
-    height: auto;
-  }
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
 
-  .choice-area button {
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    margin: 5px 5px;
-    box-shadow:  0 5px 5px 0 rgba(0, 0, 0, .6);
-    border: 5px solid purple;
+/*Game area*/
+
+.choice-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px 5px;
+  width: 100%;
+  height: auto;
+}
+
+.choice-area button {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin: 5px 5px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .6);
+  border: 5px solid purple;
 }
 
 #rock-image {
@@ -161,163 +174,163 @@ header {
 
 
 .btn:hover {
- opacity: .75;
+  opacity: .75;
 }
 
-  .btn-paper {
-    background: url(..images/paper.webp) no-repeat center center/cover;
-  }
+.btn-paper {
+  background: url(..images/paper.webp) no-repeat center center/cover;
+}
 
-  .btn-scissors {
-    background: url(..images/.scissors.webp) no-repeat center center/cover;
-  }
+.btn-scissors {
+  background: url(..images/.scissors.webp) no-repeat center center/cover;
+}
 
-  .game-area h2 {
-    padding-top: 1rem;
-    font-size: medium;
-  }
+.game-area h2 {
+  padding-top: 1rem;
+  font-size: medium;
+}
 
-  /*Timer Area*/
+/*Timer Area*/
 
-  #timer-area {
-    background-color: #fefefe;
-    display: flex;
-    justify-content: center;
-  }
+#timer-area {
+  background-color: #fefefe;
+  display: flex;
+  justify-content: center;
+}
 
-  #result {
-    margin-top: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    z-index: 2;
-  }
+#result {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
 
-  #timer {
-    font-size: large;
-  }
+#timer {
+  font-size: large;
+}
 
-  /*Start game button*/
+/*Start game button*/
 
-  #start-btn-area {
-    background-color: #fefefe;
-    display: flex;
-    justify-content: center;
-  }
+#start-btn-area {
+  background-color: #fefefe;
+  display: flex;
+  justify-content: center;
+}
 
-  #start-btn {
-    display: inline-flex;
-    justify-content: center;
-    font-size: small;
-    align-content: center;
-    padding: .5rem .25rem;
-    border: 1px solid #252525;
-    border-radius: 5px;
-    box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, .8);
-    width: 150px;
-    margin: 10px auto 0;
-    font-weight: bold;
-    font-size: 1.25rem;
-    color:  rgb(123, 3, 35);
-  }
+#start-btn {
+  display: inline-flex;
+  justify-content: center;
+  font-size: small;
+  align-content: center;
+  padding: .5rem .25rem;
+  border: 1px solid #252525;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, .8);
+  width: 150px;
+  margin: 10px auto 0;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: rgb(123, 3, 35);
+}
 
-  #start-btn:hover,
-  #start-btn:focus {
-    color: #fefefe;
-    background-color: rgba(189, 82, 111);
-  }
+#start-btn:hover,
+#start-btn:focus {
+  color: #fefefe;
+  background-color: rgba(189, 82, 111);
+}
 
-  /*Result Area*/
-  .result-area {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px 5px;
-    width: 100%;
-    height: auto;
-    justify-content: space-between;
-  }
+/*Result Area*/
+.result-area {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 5px;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+}
 
-  #user-image {
-    display: flex;
-    float: left;
-    width: 45%;
-  }
+#user-image {
+  display: flex;
+  float: left;
+  width: 45%;
+}
 
-  #computer-image {
-    display: flex;
-    float: right;
-    width: 45%;
-  }
+#computer-image {
+  display: flex;
+  float: right;
+  width: 45%;
+}
 
-  #score-area {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    justify-content: space-around;
-  }
+#score-area {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+}
 
-  #user-score-text {
-    float: left;
-    width: 45%;
-  }
+#user-score-text {
+  float: left;
+  width: 45%;
+}
 
-  #computer-score-text {
-    float: right;
-    width: 45%;
-  }
+#computer-score-text {
+  float: right;
+  width: 45%;
+}
 
-  #score-area h3 {
-    font-size: .75rem;
-  }
+#score-area h3 {
+  font-size: .75rem;
+}
 
-  #reset-btn-area {
-    padding-top: 1rem;
-    background-color: #fefefe;
-    display: flex;
-    justify-content: center;
-  }
+#reset-btn-area {
+  padding-top: 1rem;
+  background-color: #fefefe;
+  display: flex;
+  justify-content: center;
+}
 
-  #reset-btn {
-    display: inline-flex;
-    justify-content: center;
-    font-size: x-small;
-    align-content: center;
-    padding: .25rem .1rem;
-    border: 1px solid #252525;
-    border-radius: 5px;
-    box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, .8);
-    width: 100px;
-    margin: 5px auto 0;
-    font-weight: bold;
-    font-size: 1rem;
-    color:  rgb(123, 3, 35);
-  }
+#reset-btn {
+  display: inline-flex;
+  justify-content: center;
+  font-size: x-small;
+  align-content: center;
+  padding: .25rem .1rem;
+  border: 1px solid #252525;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, .8);
+  width: 100px;
+  margin: 5px auto 0;
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgb(123, 3, 35);
+}
 
-  #reset-btn:hover,
-  #reset-btn:focus {
-    color: #fefefe;
-    background-color: rgba(189, 82, 111);
-  }
+#reset-btn:hover,
+#reset-btn:focus {
+  color: #fefefe;
+  background-color: rgba(189, 82, 111);
+}
 
-  /*Media query small laptops and larger (992px and up) to resize images*/
+/*Media query small laptops and larger (992px and up) to resize images*/
 @media screen and (min-width: 992px) {
   #user-image {
     width: 25%;
     justify-content: center;
-  
+
   }
 
   #computer-image {
     width: 25%;
     justify-content: center;
-   
+
   }
 
   .result-area {
     display: flex;
     justify-content: space-around;
-    
+
   }
 }

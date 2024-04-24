@@ -1,4 +1,3 @@
-
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -67,11 +66,9 @@ function updateCountdown() {
   timer.innerHTML = `00:${seconds}`;
   time--;
   if (seconds === -1) {
-      concludeGame();
+    concludeGame();
   }
-  }
-
-
+}
 
 rockButton.addEventListener('click', () => playRound('rock'));
 
@@ -79,38 +76,37 @@ paperButton.addEventListener('click', () => playRound('paper'));
 
 scissorsButton.addEventListener('click', () => playRound('scissors'));
 
-
 let playerScore = 0;
 let computerScore = 0;
 const playerScoreDisplay = document.getElementById('user-score');
 const computerScoreDisplay = document.getElementById('computer-score');
 
 function playRound(playerChoice) {
-const choices = ['rock', 'paper', 'scissors'];
+  const choices = ['rock', 'paper', 'scissors'];
 
-const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+  const computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
-if (playerChoice === 'rock') {
-  document.getElementById("user-image").src = "assets/images/rock.webp";
-} else if (playerChoice === 'paper') {
-  document.getElementById("user-image").src = "assets/images/paper.webp";
-} else if (playerChoice === 'scissors') {
-  document.getElementById("user-image").src = "assets/images/scissors.webp";
-}
+  if (playerChoice === 'rock') {
+    document.getElementById("user-image").src = "assets/images/rock.webp";
+  } else if (playerChoice === 'paper') {
+    document.getElementById("user-image").src = "assets/images/paper.webp";
+  } else if (playerChoice === 'scissors') {
+    document.getElementById("user-image").src = "assets/images/scissors.webp";
+  }
 
-if (computerChoice === 'rock') {
-  document.getElementById("computer-image").src = "assets/images/rock.webp";
-} else if (playerChoice === 'paper') {
-  document.getElementById("computer-image").src = "assets/images/paper.webp";
-} else if (playerChoice === 'scissors') {
-  document.getElementById("computer-image").src = "assets/images/scissors.webp";
-}
+  if (computerChoice === 'rock') {
+    document.getElementById("computer-image").src = "assets/images/rock.webp";
+  } else if (playerChoice === 'paper') {
+    document.getElementById("computer-image").src = "assets/images/paper.webp";
+  } else if (playerChoice === 'scissors') {
+    document.getElementById("computer-image").src = "assets/images/scissors.webp";
+  }
 
-if (playerChoice === computerChoice) {
+  if (playerChoice === computerChoice) {
 
     resultDisplay.textContent = 'It\'s a draw!';
 
-} else if (
+  } else if (
 
     (playerChoice === 'rock' && computerChoice === 'scissors') ||
 
@@ -118,39 +114,39 @@ if (playerChoice === computerChoice) {
 
     (playerChoice === 'scissors' && computerChoice === 'paper')
 
-) {
+  ) {
 
     resultDisplay.textContent = 'You win!';
 
     playerScore++;
 
-} else {
+  } else {
 
     resultDisplay.textContent = 'Gary wins!';
 
     computerScore++;
 
-}
-/* Update the scoreboard after each round */
-playerScoreDisplay.textContent = `Your Score: ${playerScore}`;
-computerScoreDisplay.textContent = `Gary's Score: ${computerScore}`;
-}
-
-  function concludeGame() {
-
-    let timer = document.getElementById("timer-area");
-    timer.style.display = "none";
-    let finalResult = '';
-  
-    if (playerScore > computerScore) {
-        finalResult = 'Congratulations, you won the game!';
-    } else if (playerScore < computerScore) {
-        finalResult = 'Game over, Gary wins!';
-    } else {
-        finalResult = 'The game ends in a draw!';
-    }
-    resultDisplay.textContent = finalResult;
   }
+  /* Update the scoreboard after each round */
+  playerScoreDisplay.textContent = `Your Score: ${playerScore}`;
+  computerScoreDisplay.textContent = `Gary's Score: ${computerScore}`;
+}
+
+function concludeGame() {
+
+  let timer = document.getElementById("timer-area");
+  timer.style.display = "none";
+  let finalResult = '';
+
+  if (playerScore > computerScore) {
+    finalResult = 'Congratulations, you won the game!';
+  } else if (playerScore < computerScore) {
+    finalResult = 'Game over, Gary wins!';
+  } else {
+    finalResult = 'The game ends in a draw!';
+  }
+  resultDisplay.textContent = finalResult;
+}
 
 function disableBtns() {
   document.getElementsByClassName("btn").disabled = true;
@@ -169,15 +165,15 @@ let finalMessage = '';
 
 if (playerScore > computerScore) {
 
-    finalMessage = 'Congratulations, you won the game!';
+  finalMessage = 'Congratulations, you won the game!';
 
 } else if (playerScore < computerScore) {
 
-    finalMessage = 'Game over, the computer wins!';
+  finalMessage = 'Game over, the computer wins!';
 
 } else {
 
-    finalMessage = 'The game ends in a draw!';
+  finalMessage = 'The game ends in a draw!';
 
 }
 
