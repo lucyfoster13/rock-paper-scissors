@@ -12,8 +12,8 @@ Rock, Paper, Scissors is an entertainment website. Users can play the traditiona
     * When the user clicks the "Start Game" button, a timer appears and starts counting from 30 seconds.
 
 ### Features Left to Implement
-    * As a future enhancement, I would like to introduce a modal box in place of the final messages declaring the overall winner. The modal box would appear when the timer runs out, would include gifs alongside the message text, making the game more fun.
-    * I would also like to include some animations to the images, making the game feel more vibrant and energetic.
+ * As a future enhancement, I would like to introduce a modal box in place of the final messages declaring the overall winner. The modal box would appear when the timer runs out, would include gifs alongside the message text, making the game more fun.
+* I would also like to include some animations to the images, making the game feel more vibrant and energetic.
 
 ## Testing 
 
