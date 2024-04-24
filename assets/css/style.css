@@ -300,3 +300,24 @@ header {
     color: #fefefe;
     background-color: rgba(189, 82, 111);
   }
+
+  /*Media query small laptops and larger (992px and up) to resize images*/
+@media screen and (min-width: 992px) {
+  #user-image {
+    width: 25%;
+    justify-content: center;
+  
+  }
+
+  #computer-image {
+    width: 25%;
+    justify-content: center;
+   
+  }
+
+  .result-area {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+}
