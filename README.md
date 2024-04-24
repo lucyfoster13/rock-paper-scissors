@@ -2,7 +2,6 @@
 
 Rock, Paper, Scissors is an entertainment website. Users can play the traditional game against the CPU (our robot, Gary). Whoever wins the most rounds before the 30-second timer runs out is the winner. The live version of the site can be viewed [here:](https://lucyfoster13.github.io/rock-paper-scissors/)
 
-![Mockup](*******)
 
 ## Features 
 
@@ -10,8 +9,7 @@ Rock, Paper, Scissors is an entertainment website. Users can play the traditiona
 * Header
     * The header provides the name of the game and an action button to learn how to play. Once the button is clicked, a modal box appears, explaining the terms of the game and introducing the user to their opponent, Gary. 
     * The site provide a straightforward entry-point into the game. The controls, like 'Start Game' and "Reset Game" are clearly labelled and the controls are depicted with images and are complete with Aria labels.
-    * When the user clicks the "Start Game" button, a timer appears and starts counting from 00:30.
-    ![Nav Bar](*****)
+    * When the user clicks the "Start Game" button, a timer appears and starts counting from 30 seconds.
 
 ### Features Left to Implement
     * As a future enhancement, I would like to introduce a modal box in place of the final messages declaring the overall winner. The modal box would appear when the timer runs out, would include gifs alongside the message text, making the game more fun.
@@ -80,7 +78,7 @@ In all scenarios, the functions behaved as expected.
 * HTML
   * No errors were returned when passing through the official [W3C validator](https://validator.w3.org)
 
-![HTML Validator Results](***)
+![HTML Validator Results](docs/testing-images/html-validator.jpg)
 
 
 * CSS
@@ -91,8 +89,6 @@ In all scenarios, the functions behaved as expected.
 
 * JS
     * No errors were found when passing through the official [JS Hint](https://jshint.com/)
-
-![JS Hint Validator Results](*****)
 
 ## Technologies
 * HTML
