@@ -55,6 +55,7 @@ function startTimer() {
   //Part borrowed from https://www.shecodes.io/athena/52336-how-to-create-a-countdown-timer-in-javascript
 
   timer = setInterval(function () {
+    // clearInterval(timer);
     document.getElementById('timer').innerHTML = `${count}`;
     count--;
 
@@ -167,14 +168,14 @@ if (playerScore > computerScore) {
   finalMessage = 'The game ends in a draw!';
 }
 
-
 let resetBtn = document.getElementById("reset-btn");
 resetBtn.onclick = function resetGame() {
   disableBtns();
-  let timer = document.getElementById('timer-area');
-  timer.style.display = 'none';
-  startBtn.style.display = 'block';
+  let timerArea = document.getElementById('timer-area');
+  timerArea.style.display = 'none';
+  startBtn.style.display = 'flex';
   resultDisplay.style.display = 'none';
   document.getElementById('timer');
   clearInterval(timer);
+  count = 30
 }
