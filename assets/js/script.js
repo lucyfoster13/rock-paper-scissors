@@ -49,7 +49,26 @@ startBtn.onclick = function runGame() {
   startBtn.style.display = 'none';
 };
 
+/*Timer*/
+// const startingSeconds = 30;
+// let time = startingSeconds;
+
+// const timer = document.getElementById('timer');
+
+// setInterval(updateCountdown, 1000);
+
+// function updateCountdown() {
+//   const seconds = Math.floor(time);
+
+//   timer.innerHTML = `00:${seconds}`;
+//   time--;
+//   if (seconds === -1) {
+//     concludeGame();
+//   }
+// }
+
 function startTimer() {
+  //Part borrowed from https://www.shecodes.io/athena/52336-how-to-create-a-countdown-timer-in-javascript
 
   timer = setInterval(function () {
     document.getElementById('timer').innerHTML = `${count}`;
@@ -76,26 +95,34 @@ function playRound(playerChoice) {
   const choices = ['rock', 'paper', 'scissors'];
 
   let computerChoice = choices[Math.floor(Math.random() * choices.length)];
+  console.log("-----------");
+  console.log(computerChoice);
+  console.log("-----------");
+
 
   if (playerChoice === 'rock') {
-
+    console.log("player rock");
     document.getElementById('user-image').src = 'assets/images/rock.webp';
   } else if (playerChoice === 'paper') {
+    console.log("player paper");
 
     document.getElementById('user-image').src = 'assets/images/paper.webp';
   } else if (playerChoice === 'scissors') {
-
+    console.log("player scissors");
 
     document.getElementById('user-image').src = 'assets/images/scissors.webp';
   }
 
   if (computerChoice === 'rock') {
+    console.log("comp rock");
 
     document.getElementById('computer-image').src = 'assets/images/rock.webp';
   } else if (computerChoice === 'paper') {
+    console.log("comp paper");
 
     document.getElementById('computer-image').src = 'assets/images/paper.webp';
   } else if (computerChoice === 'scissors') {
+    console.log("comp scissors");
 
     document.getElementById('computer-image').src =
       'assets/images/scissors.webp';
@@ -125,6 +152,7 @@ function concludeGame() {
   let timer = document.getElementById('timer-area');
   timer.style.display = 'none';
   let finalResult = '';
+  disableBtns();
 
   if (playerScore > computerScore) {
     finalResult = 'Congratulations, you won the game!';
@@ -137,6 +165,18 @@ function concludeGame() {
 }
 
 function disableBtns() {
+  //   let buttonList = document.getElementsByClassName('btn');
+  //   let rock = document.getElementById("btn-rock").disabled = true;
+  //   console.log(rock.innerHTML);
+
+  //   for (let index = 0; index < buttonList.length; index++) {
+  //     buttonList[index].disabled = true;
+  //     console.log(buttonList.innerHTML);
+  //   }
+
+  //   const rockButton = document.getElementById('rock-image');
+  // const paperButton = document.getElementById('paper-image');
+  // const scissorsButton = document.getElementById('scissors-image');
   rockButton.disabled = true;
   paperButton.disabled = true;
   scissorsButton.disabled = true;
