@@ -94,7 +94,8 @@ In all scenarios, the functions behaved as expected.
     * The structure of the website was developed using HTML as the main language.
 * CSS
     * The website was styled using custom CSS in an external file.
-*The website's logic and responsivity was designed using Javascript in an extenal file.
+* Javascipt
+    * The website's logic and responsivity was designed using Javascript in an extenal file.
 * Gitpod
     * The website was developed using Gitpod IDE.
 * GitHub
@@ -115,7 +116,7 @@ In all scenarios, the functions behaved as expected.
 ## Deployment
 
 ### Version Control
-The site was created using the Gitpod code editor and pushed to github to the remote repository ‘camera-club’.
+The site was created using the Gitpod code editor and pushed to github to the remote repository ‘rock-paper-scissors.
 
 The following git commands were used throughout development to push code to the remote repo:
 
@@ -133,7 +134,7 @@ The following git commands were used throughout development to push code to the 
   - Click 'Save'
   - A live link will be displayed in a green banner when published successfully. 
 
-The live link can be found here - https://lucyfoster13.github.io/camera-club/
+The live link can be found here - https://lucyfoster13.github.io/rock-paper-scissors/
 
 ### Clone the Repository Code Locally
 Navigate to the GitHub Repository you want to clone to use locally:
@@ -149,15 +150,15 @@ The project will have been cloned on your local machine and be ready to use.
 ## Credits 
 
 ### Content 
-* The addition of the club's phone number and email address as clickable links that open the user's native phone and/or email app was inspired by my mentor Gareth McGirr's site: https://gareth-mcgirr.github.io/tacos-travels/ 
-* All text content on the site was written by the developer and is entirely fabricated.
-* The addition and layout of the event information section at the bottom of the homepage was taken from the Love Running project and then styled to fit Camera Club's aesthetic.
+* Displaying the user and computer's choices as images was inspired by Code Institute's video in the module content.
+* All text content on the site was written by the developer.
+* Putting the rules inside a modal box was an idea from my mentor Gareth McGirr, enabling me to put them behind a clickable button and save space on the page.
 
 ### Code
-* Code to add links that open the phone app and email app when clicked: https://tinyurl.com/campaignmonitortutorial.
-* Code to place the call-to-action button in the center of the landing image: https://www.w3schools.com/howto/howto_css_button_on_image.asp.
-* Code to add redirection link to buttons: https://tinyurl.com/button-redirect
-* Code to add visually-hidden text for screen-readers: https://tinyurl.com/visually-hidden-text
+* Code to disable the game buttons when the page first loads: https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp
+* When I ran into obstacles, this website helped me to fix them and to further understand the logic and function behind the code: https://hackr.io/blog/how-to-build-rock-paper-scissors-in-javascript
+* I learned how to create a countdown timer with help from this video: https://www.youtube.com/watch?v=x7WJEmxNlEs
+* I learned how to add a modal box from this lesson: https://www.w3schools.com/howto/howto_css_modals.asp
 
 ### Media 
-* All images were downloaded from [Unsplash](https://unsplash.com) and [Pexels](https://www.pexels.com/).
+* All images were downloaded from [iStock](https://www.istockphoto.com/) and [Adobe Stock](https://stock.adobe.com/ie/).
