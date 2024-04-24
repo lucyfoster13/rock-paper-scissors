@@ -1,110 +1,163 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Camera Club
 
-Welcome Lucy Foster,
+Rock, Paper, Scissors is an entertainment website. Users can play the traditional game against the CPU (our robot, Gary). Whoever wins the most rounds before the 30-second timer runs out is the winner. The live version of the site can be viewed [here:](https://lucyfoster13.github.io/rock-paper-scissors/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Mockup](*******)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Features 
 
-## Gitpod Reminders
+### Existing Features
+* Header
+    * The header provides the name of the game and an action button to learn how to play. Once the button is clicked, a modal box appears, explaining the terms of the game and introducing the user to their opponent, Gary. 
+    * The site provide a straightforward entry-point into the game. The controls, like 'Start Game' and "Reset Game" are clearly labelled and the controls are depicted with images and are complete with Aria labels.
+    * When the user clicks the "Start Game" button, a timer appears and starts counting from 00:30.
+    ![Nav Bar](*****)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Features Left to Implement
+    * As a future enhancement, I would like to introduce a modal box in place of the final messages declaring the overall winner. The modal box would appear when the timer runs out, would include gifs alongside the message text, making the game more fun.
+    * I would also like to include some animations to the images, making the game feel more vibrant and energetic.
 
-`python3 -m http.server`
+## Testing 
 
-A blue button should appear to click: _Make Public_,
+### Responsiveness
+All pages were tested to ensure responsiveness on screen sizes from 280px and upwards on Chrome, Safari, Firefox and Opera browsers.
 
-Another blue button should appear to click: _Open Browser_.
+Steps to test:
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+1. Open browser and navigate to [Rock, Paper, Scissors](https://lucyfoster13.github.io/rock-paper-scissors/)
+2. Open the developer tools (right click and inspect)
+3. Set to responsive and decrease width to 280px or "Galaxy Fold"
+4. Set the zoom to 50%
+5. Click and drag the responsive window to maximum width
 
-A blue button should appear to click: _Make Public_,
+Expected:
 
-Another blue button should appear to click: _Open Browser_.
+Website is responsive on all screen sizes and no images are pixelated or stretched.
+No horizontal scroll is present.
+No elements overlap.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Actual:
 
-To log into the Heroku toolbelt CLI:
+Website behaved as expected.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Website was also opened on the following devices and no responsive issues were found:
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- Apple iPhone 12 Pro
+- Apple iPhone 15 Pro Max
+- Samsung Galaxy S10
+- Amazon Fire HD 8 Tablet
+- Apple iPad Pro
+- Apple Macbook Pro
 
-------
+### Accessibility
+[Wave Accessibility](https://wave.webaim.org/) tool was used throughout development and for final testing of the deployed website to check for any aid accessibility testing.
 
-## Release History
+Testing was focused to ensure the following criteria were met:
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- All forms have associated labels or aria-labels so that they can be read aloud by a screen reader
+- Colours used on the site are suitably contrasted and don't cause any readability issues for visually impaired users
+- Heading levels are not skipped, ensuring each section of content's importance is relayed correctly to the end user
+- All content is contained within landmarks to ensure ease of use for assistive technology, allowing the user to navigate by page regions
+- All images and icons have alternative text or titles so descriptions can be communicated. via screen readers
+- HTML page lang attribute has been set
+- Aria properties have been implemented correctly
 
-**September 20 2023:** Update Python version to 3.9.17.
+Found Issue:
+Fix:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Lighthouse Testing
+![Lighthouse Result]()
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Functional Testing
+- Testing was performed to ensure all buttons resulted in the correct action, as per design. This was done by clicking on the buttons and noting what happened.
+- The choice images were tested to ensure that they fed the right information to the program and displayed the correct image in the user's image area.
+- Testing was performed on the game as a whole to ensure the logic was correct and the game was functioning correctly.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+In all scenarios, the functions behaved as expected.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Validator Testing
+* HTML
+  * No errors were returned when passing through the official [W3C validator](https://validator.w3.org)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![HTML Validator Results](***)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* CSS
+    * No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+![CSS Validator Results](****)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Technologies
+* HTML
+    * The structure of the website was developed using HTML as the main language.
+* CSS
+    * The website was styled using custom CSS in an external file.
+*The website's logic and responsivity was designed using Javascript in an extenal file.
+* Gitpod
+    * The website was developed using Gitpod IDE.
+* GitHub
+    * Source code is hosted on GitHub and deployed using Git Pages.
+* Git 
+    * Used to commit and push code during the development of the website.
+* Google Fonts
+    * The fonts used throughout the website were obtained from https://fonts.google.com/.
+* Adobe Lightroom
+    * Adobe Lightroom was used for resizing images and editing photos for the website.    
+* Convertio & WebP Converter
+    * https://convertio.co/ and https://www.freeconvert.com/webp-converter were used to convert image files from jpg to webp.  
+* TinyJPG & TinyPNG
+    * https://tinyjpg.com/ and https://tinypng.com/ were used to reduce the size of the images used throughout the website
+* Favicon.io
+    * The website's favicon was downloaded from https://favicon.io/favicon-converter/ 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Deployment
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Version Control
+The site was created using the Gitpod code editor and pushed to github to the remote repository ‘camera-club’.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+The following git commands were used throughout development to push code to the remote repo:
 
-------
+```git add . ``` - This command was used to add any modifications to the staging area before they were committed.
 
-## FAQ about the uptime script
+```git commit -m “commit message”``` - This command was used to commit changes to the local repository queue, ready for the final step.
 
-**Why have you added this script?**
+```git push``` - This command was used to push all committed code to the remote repository on github.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Deployment to Github Pages
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the menu on left select 'Pages'
+  - From the source section drop-down menu, select the Branch: main
+  - Click 'Save'
+  - A live link will be displayed in a green banner when published successfully. 
 
-**How will this affect me?**
+The live link can be found here - https://lucyfoster13.github.io/camera-club/
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Clone the Repository Code Locally
+Navigate to the GitHub Repository you want to clone to use locally:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- Click on the code drop down button
+- Click on HTTPS
+- Copy the repository link to the clipboard
+- Open your IDE of choice (git must be installed for the next steps)
+- Type git clone copied-git-url into the IDE terminal
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+The project will have been cloned on your local machine and be ready to use. 
 
-**So….?**
+## Credits 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Content 
+* The addition of the club's phone number and email address as clickable links that open the user's native phone and/or email app was inspired by my mentor Gareth McGirr's site: https://gareth-mcgirr.github.io/tacos-travels/ 
+* All text content on the site was written by the developer and is entirely fabricated.
+* The addition and layout of the event information section at the bottom of the homepage was taken from the Love Running project and then styled to fit Camera Club's aesthetic.
 
-**Can I opt out?**
+### Code
+* Code to add links that open the phone app and email app when clicked: https://tinyurl.com/campaignmonitortutorial.
+* Code to place the call-to-action button in the center of the landing image: https://www.w3schools.com/howto/howto_css_button_on_image.asp.
+* Code to add redirection link to buttons: https://tinyurl.com/button-redirect
+* Code to add visually-hidden text for screen-readers: https://tinyurl.com/visually-hidden-text
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+### Media 
+* All images were downloaded from [Unsplash](https://unsplash.com) and [Pexels](https://www.pexels.com/).
